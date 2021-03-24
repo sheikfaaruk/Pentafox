@@ -1,6 +1,6 @@
 def add_num(a,b):
-    multiply=num1*3.14*num2;
+    multiply=(2*3.14*r)*num;
     return multiply;
-num1=int(input(" Enter No. of Rounds: "))
-num2=7 
-print("‘x’ Kms travelled:",add_num(num1,num2))
+num=int(input(" Enter No. of Rounds: "))
+r=7/2
+print("‘x’ Kms travelled:",add_num(num,r))
