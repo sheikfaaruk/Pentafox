@@ -1,0 +1,32 @@
+CREATE TABLE `tbl_employee` (
+  `emp_id` bigint COLLATE utf8mb4_unicode_ci NOT NULL AUTO_INCREMENT,
+  `emp_name` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `emp_email` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `emp_password` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`emp_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+Add employee
+
+{
+	"name":"Sheikfaaruk",
+	"email":"sheikfaaruk@gmail.com",
+	"password":"pwd@123"
+}
+
+update employee
+
+{
+	"id":2,
+	"name":"vinobala",
+	"email":"vinosimp@gmail.com",
+	"password":"pwd@456"
+}
+
+Delete the employee
+
+http://127.0.0.1:5000/delete/enter_the_id_no
+
+Display the Employees
+
+http://127.0.0.1:5000/employees
