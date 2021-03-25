@@ -116,7 +116,7 @@ def delete_employee(id):#delete the employee details
 def not_found(error=None):
     message = {
         'status': 404,
-        'message': 'Not Found: ' + request.url,
+        'message': 'Not Found ERROR in SERVER: ' + request.url,
     }
     resp = jsonify(message)
     resp.status_code = 404
